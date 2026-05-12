@@ -112,7 +112,7 @@
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-primary-container/90 backdrop-blur-md border-b border-outline-variant/30 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full">
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary dark:text-primary-fixed cursor-pointer">menu</span>
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed cursor-pointer" onclick="document.getElementById('mobile-menu').classList.remove('hidden')" style="cursor:pointer">menu</span>
 <h1 class="font-headline-md text-headline-md tracking-tighter text-primary dark:text-primary-fixed">OROZCO VISUALS</h1>
 </div>
 <nav class="hidden md:flex space-x-12">
@@ -232,23 +232,41 @@
             © 2024 OROZCO VISUALS. CINEMATIC STORIES FOR THE DISCERNING EYE.
         </p>
 </footer>
-<!-- Mobile Navigation Bar -->
-<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center py-4 px-2 bg-primary dark:bg-primary-container shadow-2xl z-50">
-<div class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60">
+<!-- Mobile Menu Drawer -->
+<div id="mobile-menu" class="fixed inset-0 z-[200] hidden" role="dialog" aria-modal="true">
+  <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="document.getElementById('mobile-menu').classList.add('hidden')"></div>
+  <div class="absolute top-0 left-0 h-full w-72 bg-surface flex flex-col py-10 px-10 shadow-2xl">
+    <button onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="self-end mb-12 text-primary hover:opacity-60 transition-opacity">
+      <span class="material-symbols-outlined text-2xl">close</span>
+    </button>
+    <nav class="flex flex-col gap-10 flex-1">
+      <a href="index.html"      class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-primary hover:opacity-60 transition-opacity">HOME</a>
+      <a href="about.html"      class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant hover:opacity-60 transition-opacity">ABOUT</a>
+      <a href="portfolio.html"  class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant hover:opacity-60 transition-opacity">WORK</a>
+      <a href="investment.html" class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant hover:opacity-60 transition-opacity">PRICING</a>
+      <a href="graduation.html" class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant hover:opacity-60 transition-opacity">GRADUATION</a>
+    </nav>
+    <a href="book.html" class="font-label-sm text-label-sm tracking-[0.2em] uppercase bg-primary text-on-primary py-4 text-center hover:opacity-80 transition-opacity mt-10">BOOK NOW</a>
+  </div>
+</div>
+
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center py-4 px-2 bg-primary z-50 shadow-2xl">
+<a class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60" href="index.html">
 <span class="material-symbols-outlined">home</span>
-<span class="font-label-sm text-label-sm tracking-widest">HOME</span>
-</div>
-<div class="flex flex-col items-center justify-center text-tertiary-fixed font-bold translate-y-[-2px]">
+<span class="font-label-sm text-[10px] mt-1 tracking-widest">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-tertiary-fixed font-bold translate-y-[-2px]" href="portfolio.html">
 <span class="material-symbols-outlined">photo_library</span>
-<span class="font-label-sm text-label-sm tracking-widest">WORK</span>
-</div>
-<div class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60">
+<span class="font-label-sm text-[10px] mt-1 tracking-widest">WORK</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60" href="investment.html">
 <span class="material-symbols-outlined">payments</span>
-<span class="font-label-sm text-label-sm tracking-widest">PRICING</span>
-</div>
-<div class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60">
+<span class="font-label-sm text-[10px] mt-1 tracking-widest">PRICING</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60" href="book.html">
 <span class="material-symbols-outlined">calendar_today</span>
-<span class="font-label-sm text-label-sm tracking-widest">BOOK</span>
-</div>
+<span class="font-label-sm text-[10px] mt-1 tracking-widest">BOOK</span>
+</a>
 </nav>
 </body></html>
