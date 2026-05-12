@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Hanken+Grotesk:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#2f3131",
+                    "primary": "#000000",
+                    "primary-container": "#1c1b1b",
+                    "primary-fixed": "#e5e2e1",
+                    "primary-fixed-dim": "#c9c6c5",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e2e2e2",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "background": "#f9f9f9",
+                    "tertiary-fixed": "#f0e0d3",
+                    "secondary-container": "#e1dfdb",
+                    "surface-container-high": "#e8e8e8",
+                    "on-background": "#1a1c1c",
+                    "on-tertiary-fixed-variant": "#4f453c",
+                    "tertiary": "#000000",
+                    "secondary": "#5e5e5b",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f9f9f9",
+                    "surface-container": "#eeeeee",
+                    "surface": "#f9f9f9",
+                    "outline-variant": "#c4c7c7",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#474744",
+                    "tertiary-fixed-dim": "#d3c4b8",
+                    "tertiary-container": "#221a13",
+                    "on-primary-fixed-variant": "#474646",
+                    "on-secondary-fixed": "#1b1c19",
+                    "outline": "#747878",
+                    "surface-tint": "#5f5e5e",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-surface-variant": "#444748",
+                    "on-tertiary-fixed": "#221a13",
+                    "on-secondary-container": "#63635f",
+                    "surface-container-low": "#f3f3f4",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#c8c6c2",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#f0f1f1",
+                    "surface-dim": "#dadada",
+                    "on-tertiary-container": "#8e8277",
+                    "on-surface": "#1a1c1c",
+                    "on-primary-container": "#858383",
+                    "inverse-primary": "#c9c6c5",
+                    "on-primary-fixed": "#1c1b1b",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "margin-tablet": "40px",
+                    "section-gap": "160px",
+                    "container-max": "1440px",
+                    "unit": "8px",
+                    "margin-desktop": "80px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "label-sm": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "display-md": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "body-md": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                    "display-lg": ["84px", {"lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-lg": ["20px", {"lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                    "display-md": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-primary-container/90 backdrop-blur-md border-b border-outline-variant/30 h-20 flex justify-between items-center px-margin-mobile md:px-margin-desktop">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed cursor-pointer">menu</span>
+<span class="font-headline-md text-headline-md tracking-tighter text-primary dark:text-primary-fixed">OROZCO VISUALS</span>
+</div>
+<nav class="hidden md:flex space-x-12">
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant hover:opacity-70 transition-opacity duration-300" href="#">HOME</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-primary dark:text-primary-fixed font-bold hover:opacity-70 transition-opacity duration-300" href="#">ABOUT</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant hover:opacity-70 transition-opacity duration-300" href="#">WORK</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant hover:opacity-70 transition-opacity duration-300" href="#">BLOG</a>
+</nav>
+<button class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-primary dark:text-primary-fixed border border-primary px-6 py-2 hover:bg-primary hover:text-on-primary transition-all duration-300 active:scale-95">BOOK NOW</button>
+</header>
+<main class="pt-20">
+<!-- Hero Portrait Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 overflow-hidden">
+<img alt="Arturo Orozco Portrait" class="w-full h-[600px] md:h-[800px] object-cover grayscale" data-alt="A moody, high-contrast black and white portrait of Arturo Orozco, a Mexican photographer with a thoughtful expression. He is wearing a dark linen shirt and holding a vintage film camera. The lighting is soft but dramatic, reminiscent of cinematic film noir, with deep shadows and bright highlights against a minimalist, textured concrete background. The image exudes professional craftsmanship and emotional depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd27nvN42EnOOkJqxXH-VrJsfRlctlJHuC14sW_j676goBoD6q-1LrJoecdX6KkO92QI4T_5cGZqAwvT_7n8XjhPD_LZwlIqrpnYZOekGQhZu6CFWfLVhLveKtLnVUYbzXro6edy_GZDZUhc2WP6YrtFk5PTtrGZkcbbKcfUekunJVCOvcXuiS4CoLEkHIs4LY0T7r2f0vHJ1s5Fl1vIgQqKj8AopEBqtKon7a3JetoC2VCDn8pYS4G_j8QcrJmfBypXsjCvnMxXI"/>
+</div>
+<div class="md:col-span-5 md:pl-12 flex flex-col justify-center space-y-8">
+<span class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-secondary">MEET THE ARTIST</span>
+<h1 class="font-display-md text-display-md md:text-display-lg leading-tight">Arturo <br/>Orozco</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">"I don't just take photographs; I curate memories of light and lineage."</p>
+</div>
+</div>
+</section>
+<!-- Narrative Section -->
+<section class="bg-surface-container-low py-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="max-w-4xl mx-auto space-y-12">
+<div class="space-y-6">
+<h2 class="font-headline-lg text-headline-lg border-b border-outline-variant pb-6">Heritage &amp; Heart</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Born and raised in the vibrant heart of Guadalajara, Mexico, my relationship with visual storytelling began through the lens of my grandfather's manual Leica. I watched how he captured the quiet dignity of everyday life—the way golden hour light kissed the cobblestone streets and the raw, unfiltered emotions of family reunions.
+                    </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        My Mexican heritage is the pulse of my work. It taught me that 'culture' isn't just a set of traditions, but a living, breathing tapestry of connections. Today, I translate that warmth and intensity into a cinematic editorial style for weddings and private events across the globe.
+                    </p>
+</div>
+<!-- Quote Block -->
+<div class="bg-primary p-12 text-center">
+<p class="font-headline-md text-headline-md text-on-primary italic mb-4">"Every frame is a silent dialogue between the past and the present."</p>
+<span class="font-label-sm text-label-sm tracking-[0.2em] text-on-primary opacity-60 uppercase">— ARTURO OROZCO</span>
+</div>
+</div>
+</section>
+<!-- The Editorial Approach - Asymmetric Bento Grid -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-24 space-y-4">
+<span class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-secondary">THE METHOD</span>
+<h2 class="font-display-md text-display-md">The Editorial Approach</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto">
+<!-- Large Image (Behind the scenes) -->
+<div class="md:col-span-8 group relative overflow-hidden h-[500px]">
+<img alt="BTS Directing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A cinematic behind-the-scenes shot of a photographer directing a couple in a sun-drenched, neoclassical courtyard. The photographer, seen from the back, is gesturing towards the light. The scene is captured in a high-key light mode aesthetic with warm, golden tones and soft, ethereal lens flare. The composition is elegant and minimal, highlighting the intentionality of the creative process." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNQin8gXaWSPsQU0rJknsJCwMDuoM_Je7rMmz7-GUUt-cBdweRY-CmL09vEfxK-Tsw59_1We9JBCiVgicd9LYMTg6pjs_i-gowOLShyHEUKtaFCIkNp1-sTvirZpT5aa9bZMVFUpX5jGrgT6EsRK2tIvWi4-63VOJuj-go-EGJcnxpMIeDRIoYZR7-FK2LebzwS8rYP44-8neskvR9hbGwQRikZm29K72OfpSVxsjGqi1HxPqrRUVxyhIxjMQEpKxylhe-5EFRKjg"/>
+<div class="absolute bottom-8 left-8 bg-surface/80 backdrop-blur p-6 max-w-xs border border-outline-variant/30">
+<span class="font-label-sm text-label-sm tracking-widest uppercase block mb-2">DIRECTION</span>
+<p class="font-body-md text-body-md text-on-surface-variant">I guide movement to find the truth between the poses.</p>
+</div>
+</div>
+<!-- Vertical Small -->
+<div class="md:col-span-4 space-y-8">
+<div class="h-[234px] overflow-hidden">
+<img alt="Detail" class="w-full h-full object-cover grayscale" data-alt="A macro photography shot of an antique silver tray holding delicate lace and vintage wedding rings. The lighting is soft and moody, emphasizing texture and refined luxury. The color palette is a sophisticated mix of ivory, charcoal, and cool silver tones. The image represents the discerning eye for editorial details in a minimalist, high-end wedding setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfPdS_DzInOq79Qduat_vynFzL2grJ7RosUcdl-EioDzIDSSsxzmAMjoPqlCzxeIUcV2y7dYkE8oeFJvlu_jMcGnTl44IzMpWu7PC29JhkkK8F980Jodg_pOm4bzCTM46JTLBHJhBJe6eia9dt6f-knG5BpMkB981yY_1itwRXtwiQdPECAuB28plLrX9J1-2KYirc6vvpKXVoY7FIArMH6WonJbNwjIz6wDeFrEGCnyEpszURzkHCL7ZEqqTUJEhkKDFww7R3h4g"/>
+</div>
+<div class="h-[234px] overflow-hidden">
+<img alt="Film Process" class="w-full h-full object-cover" data-alt="An artistic flat lay of professional camera equipment, including 35mm film rolls and a light meter, arranged on a pristine white marble surface. The lighting is clean and bright, creating a modern, tech-luxury aesthetic. The composition is perfectly balanced and minimalist, reflecting the precision and quality of a professional photographer's toolkit." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZPF0_NlpA30O8d3yWm_eaTk1F84yOZQoCVHYKeFvZvLCAKgVemxYy7Er9O2bT0_j10A7zb7MM9Nv1kWleNwHs5yV_jAgflzexU6iqvqBbkzP-XSDlPya9MMVpCvVHa7xIGqOiN1MnPPtJpZpoHySKOizPxWPFM8xS2OfL-WtpsEJw1VgtLuHkQ6QTAQJtQjyRM-zjSKMSgMuXVU5kdNpggWFm8A10gA1hEoo0gD4iISgt6A82ODppfAuCJ-y6-_WhLzHU-ywteqw"/>
+</div>
+</div>
+<!-- Wide Bottom -->
+<div class="md:col-span-4 h-[400px] overflow-hidden">
+<img alt="Landscape inspiration" class="w-full h-full object-cover" data-alt="A wide-angle cinematic landscape shot of a misty mountain range at dawn. The scene is bathed in cool blue and soft gray tones, creating a serene and timeless atmosphere. The composition uses a letterbox aspect ratio to enhance the cinematic feel, symbolizing the expansive and storytelling nature of Arturo Orozco's visual work." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOLCJd16Ry1hsW_QJDbcCDRZwB5AY4Y4pfm2DjDji7oFjh8Bs2X7DF44vlBgSgbxNRKYFv-M7NOu6dwpLyVUrDHXcgaKAxnyX3vEcX3Tc9SwGl6BOfi4CKhUfRGyqiyBkMvTCSVVcpfojQ5CuCcgtsd4bXX7THGp2yAF4Wri8rc7irNrms1lYsGgf_x3DHhwnphyA7PzTdPRIAoLnDVnWBwCoCqU6i1eOkOnjRHmu8dI0OQDHKyEHWTLUyf3jXX2Fg6Hc6eRUzTd8"/>
+</div>
+<div class="md:col-span-8 flex flex-col justify-center bg-tertiary-fixed p-12">
+<h3 class="font-headline-md text-headline-md mb-6">Intentional Immersion</h3>
+<p class="font-body-lg text-body-lg text-on-tertiary-fixed-variant max-w-xl">
+                        I believe in being present without being intrusive. My goal is to capture the symphony of your day—the loud cheers, the whispered promises, and the quiet glances that often go unseen. By combining fine-art techniques with documentary storytelling, I create a narrative that feels as profound as it looks.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-section-gap px-margin-mobile text-center">
+<div class="max-w-2xl mx-auto space-y-8">
+<h2 class="font-display-md text-display-md">Let's create something timeless.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Available for worldwide commissions. Seeking couples who value art as much as I do.</p>
+<div class="pt-8">
+<a class="inline-block bg-primary text-on-primary font-label-sm text-label-sm tracking-[0.2em] uppercase px-12 py-5 hover:opacity-80 transition-opacity" href="#">GET IN TOUCH</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-tertiary-container w-full py-section-gap">
+<div class="flex flex-col items-center justify-center text-center px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto space-y-12">
+<span class="font-headline-lg text-headline-lg text-primary-fixed">OROZCO VISUALS</span>
+<div class="flex flex-wrap justify-center gap-8 md:gap-16">
+<a class="font-label-sm text-label-sm tracking-[0.2em] text-on-primary-container hover:text-tertiary-fixed-dim transition-colors uppercase border-b border-primary-fixed" href="#">LET'S TELL YOUR STORY</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] text-on-primary-container hover:text-tertiary-fixed-dim transition-colors uppercase" href="#">INSTAGRAM</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] text-on-primary-container hover:text-tertiary-fixed-dim transition-colors uppercase" href="#">FACEBOOK</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] text-on-primary-container hover:text-tertiary-fixed-dim transition-colors uppercase" href="#">CONTACT</a>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container opacity-60">© 2024 OROZCO VISUALS. CINEMATIC STORIES FOR THE DISCERNING EYE.</p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center py-4 px-2 bg-primary dark:bg-primary-container shadow-2xl z-50">
+<div class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm tracking-widest">HOME</span>
+</div>
+<div class="flex flex-col items-center justify-center text-tertiary-fixed font-bold translate-y-[-2px]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-label-sm text-label-sm tracking-widest">ABOUT</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="font-label-sm text-label-sm tracking-widest">WORK</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-label-sm text-label-sm tracking-widest">BOOK</span>
+</div>
+</nav>
+</body></html>

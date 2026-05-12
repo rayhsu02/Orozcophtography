@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#2f3131",
+                    "primary": "#000000",
+                    "primary-container": "#1c1b1b",
+                    "primary-fixed": "#e5e2e1",
+                    "primary-fixed-dim": "#c9c6c5",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e2e2e2",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "background": "#f9f9f9",
+                    "tertiary-fixed": "#f0e0d3",
+                    "secondary-container": "#e1dfdb",
+                    "surface-container-high": "#e8e8e8",
+                    "on-background": "#1a1c1c",
+                    "on-tertiary-fixed-variant": "#4f453c",
+                    "tertiary": "#000000",
+                    "secondary": "#5e5e5b",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f9f9f9",
+                    "surface-container": "#eeeeee",
+                    "surface": "#f9f9f9",
+                    "outline-variant": "#c4c7c7",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#474744",
+                    "tertiary-fixed-dim": "#d3c4b8",
+                    "tertiary-container": "#221a13",
+                    "on-primary-fixed-variant": "#474646",
+                    "on-secondary-fixed": "#1b1c19",
+                    "outline": "#747878",
+                    "surface-tint": "#5f5e5e",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-surface-variant": "#444748",
+                    "on-tertiary-fixed": "#221a13",
+                    "on-secondary-container": "#63635f",
+                    "surface-container-low": "#f3f3f4",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#c8c6c2",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#f0f1f1",
+                    "surface-dim": "#dadada",
+                    "on-tertiary-container": "#8e8277",
+                    "on-surface": "#1a1c1c",
+                    "on-primary-container": "#858383",
+                    "inverse-primary": "#c9c6c5",
+                    "on-primary-fixed": "#1c1b1b",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "margin-tablet": "40px",
+                    "section-gap": "160px",
+                    "container-max": "1440px",
+                    "unit": "8px",
+                    "margin-desktop": "80px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "label-sm": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "display-md": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "body-md": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                    "display-lg": ["84px", {"lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-lg": ["20px", {"lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                    "display-md": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-white">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-primary-container/90 backdrop-blur-md border-b border-outline-variant/30 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed cursor-pointer">menu</span>
+<h1 class="font-headline-md text-headline-md tracking-tighter text-primary dark:text-primary-fixed">OROZCO VISUALS</h1>
+</div>
+<nav class="hidden md:flex space-x-12">
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant dark:text-on-primary-container hover:opacity-70 transition-opacity duration-300" href="index.html">HOME</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-primary dark:text-primary-fixed font-bold" href="portfolio.html">WORK</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant dark:text-on-primary-container hover:opacity-70 transition-opacity duration-300" href="investment.html">PRICING</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant hover:opacity-70 transition-opacity duration-300" href="graduation.html">GRADUATION</a>
+</nav>
+<a href="book.html" class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-primary dark:text-primary-fixed border border-primary px-6 py-2 hover:bg-primary hover:text-white transition-all duration-300 active:scale-95" style="display:inline-block;text-decoration:none;text-align:center;">BOOK NOW</a>
+</header>
+<main class="pt-20">
+<!-- Hero Section: Large Editorial Typography -->
+<section class="min-h-[716px] flex flex-col justify-center px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto w-full py-20">
+<p class="font-label-sm text-label-sm tracking-[0.3em] text-primary mb-6 opacity-60">PORTFOLIO VOLUME II</p>
+<h2 class="font-display-lg text-display-lg md:text-[120px] leading-tight mb-8 max-w-4xl">
+                    Capturing <span class="italic">light</span> in its most honest form.
+                </h2>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<p class="font-body-lg text-body-lg max-w-xl text-on-surface-variant">
+                        Our work is a dialogue between the observer and the observed. We document life’s most profound milestones through a lens of cinematic editorialism, ensuring every frame feels like a timeless heirloom.
+                    </p>
+<div class="flex items-center gap-4 group cursor-pointer">
+<span class="font-label-sm text-label-sm tracking-widest uppercase">Explore Recent Works</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Cinematic Showreel Placeholder -->
+<section class="px-margin-mobile md:px-margin-desktop py-section-gap">
+<div class="relative w-full aspect-[2.35/1] overflow-hidden bg-primary-container group cursor-pointer">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-1000" data-alt="A cinematic, wide-angle shot of a couple standing on a wind-swept coastal cliff during the golden hour. The lighting is warm and ethereal, highlighting the movement of a long silk dress. The aesthetic is high-end editorial photography with a deep focus on texture and atmospheric mood, using a palette of soft ambers and muted ocean blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDpfKo7yK5xg8DuJVMJei7vg5s0R5qE6eyz4GK-ZD2N3252U4uzIxZeBxquZVIQ0zdGboEYRTK-WpDxyCOTjxHcviPs4GKj4svzFwZ0RQ-zm4hSjIyg49JvzFn0k2JxyYpALSegJVTB1dJzXNPPXTMqLgq5E5WxV0_nskACAxJQqoyt8nASGI8b9iiNtXYnS-xB4Fx1HBf5z3ehWiD8jE2fBaj9o3uRVV4vtY3ORQtuQO_fJX63qawAo507hJXPYrLX-nrb8zl8qM"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="flex flex-col items-center">
+<div class="w-24 h-24 rounded-full border border-white/30 flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-white text-4xl" data-weight="fill">play_arrow</span>
+</div>
+<p class="font-label-sm text-label-sm tracking-[0.4em] text-white mt-6">VIEW FILM SHOWREEL</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Filterable Grid -->
+<section class="px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-wrap gap-8 mb-20 justify-center">
+<button class="font-label-sm text-label-sm tracking-widest border-b-2 border-primary pb-2">ALL WORKS</button>
+<button class="font-label-sm text-label-sm tracking-widest text-on-surface-variant hover:text-primary transition-colors pb-2">WEDDINGS</button>
+<button class="font-label-sm text-label-sm tracking-widest text-on-surface-variant hover:text-primary transition-colors pb-2">ENGAGEMENTS</button>
+<button class="font-label-sm text-label-sm tracking-widest text-on-surface-variant hover:text-primary transition-colors pb-2">QUINCEAÑERAS</button>
+<button class="font-label-sm text-label-sm tracking-widest text-on-surface-variant hover:text-primary transition-colors pb-2">GRADUATION</button>
+</div>
+<!-- Masonry Style Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Card -->
+<div class="md:col-span-8 group overflow-hidden">
+<div class="aspect-[4/3] bg-surface-container overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A high-contrast black and white editorial photograph of a bride adjusting her veil in front of a grand arched window. The lighting creates sharp shadows and bright highlights on the intricate lace details. The mood is intimate and sophisticated, reflecting a timeless luxury wedding aesthetic with deep blacks and crisp whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtzECn_2msFFCb6TwNHPh4HHGAJxkpj-YlgkTOI5pQ_ZAUyNhXDFHNI1VrXniuo5UV3NNU2mPFzGWjOqSCwAdN2nYuEswidvYBTlMR9XgYir0BiXhtOiXNR-DvpyRLAbuoP_HkP5cw-qurfDcOBhwMGU_eCvK8ZlNt9p3UtD1DhR_NlZTGcF86ySQ91fWjSB-rL9LsY7xPj_X-U13Co9O6KZzgihNWon5W-l-DOqWgchUNphN7FVidPD-KJuMXX06hK0g97YOfgN4"/>
+</div>
+<div class="flex justify-between items-center">
+<h3 class="font-headline-md text-headline-md italic">The Grand Ballroom</h3>
+<span class="font-label-sm text-label-sm tracking-widest opacity-60">WEDDINGS — 2024</span>
+</div>
+</div>
+<!-- Vertical Card -->
+<div class="md:col-span-4 group overflow-hidden">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A vertical portrait of a young woman in an ornate traditional dress during a Quinceañera celebration. She is positioned in a lush, manicured garden at twilight. The lighting is soft and magical, with small fairy lights in the background creating a soft bokeh. The overall style is dreamlike and premium, featuring rich textures and warm tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwptY6eQwO-OXGBJtjWBwRmAO0Y-MCLZoSbgg4L9bs2xTsNixs88h1cf3mP1AxaAUMkSGBNz8Ghur-bMi5uQH9NJrnvaTFT0wkBxMB3JzBsh7nV-9IvZSGnPqYvt2BCfh6ZWZz7V3l8Sdzq9njtLi1I1VwgQaaRr6jI36GXXt-x9fPebKuN6rjoM31Rz73X7lRWXATr509aWNXtBpINPMG35DAILErxnuLjZNEODca4O1iirkAUpQcNspvEY3p8-U_KSSbYB9La18"/>
+</div>
+<h3 class="font-headline-md text-headline-md italic">Sofia's Quince</h3>
+<p class="font-label-sm text-label-sm tracking-widest opacity-60">PORTRAITS — 2023</p>
+</div>
+<!-- Square Card -->
+<div class="md:col-span-4 group overflow-hidden">
+<div class="aspect-square bg-surface-container overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A minimalist overhead shot of two gold wedding rings resting on a piece of weathered, textured stone. The lighting is harsh and direct, casting long architectural shadows. The color palette is restricted to warm grays, muted golds, and deep blacks, evoking a modern and artistic approach to wedding detail photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH6Pv0m2HCSgxjXq7jvk1WQRxJZaqEl7U_kMwg3b34FihQSs3LfgP0y6kPm12PJbYFEq1qOBE2uktRiAkr1Ze8ECXNARRZOKDI-vBe8E8Qk-R587W7qpdJF3Ydbj8bH3Yge9uQwOarKarLNm2mC7OzAMNEguj1WIKJqDL5Pi1aO5uC4ciz_czCYg-xfSb8Vxn69I61ggVknolD-zdh6NURrA0GOsyuidkCUqvrQSXO1g1YRvkwmK2avPzhoWy-fGRDUO6wjB64XpU"/>
+</div>
+<h3 class="font-headline-md text-headline-md italic">Minimal Details</h3>
+<p class="font-label-sm text-label-sm tracking-widest opacity-60">EDITORIAL — 2024</p>
+</div>
+<!-- Wide Card -->
+<div class="md:col-span-8 group overflow-hidden">
+<div class="aspect-[16/9] bg-surface-container overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A wide cinematic shot of a sunset engagement session in a desert landscape. The couple is silhouetted against a vibrant orange and purple sky. The horizon is low in the frame, emphasizing the vastness of the environment. The aesthetic is epic and romantic, with a focus on scale and the natural beauty of the golden hour lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYavfuEgefBAsU3B6b9-qviSMGcy_a_0lFhm-wwHg6RWRECTWsCy55t0vZIMKEFtLnx155G082UkzmQ6nxWuKcurfDstBiAA0dnt8vLn1NjuVL3b10LFIKObSvM4oa7ZtlrW3ciK9fh9HsWTdMj2SohxBdTI1O409I5uM6uhHKqqiZRekNPqzgtmEyFukHIJEYN5fDKJ8DPtJGGhBeb8-LH3j5MKNB1GEfq2e0lrgPNKXltfOK4_aRKFHE40oDTMKwf-xbdeceCtE"/>
+</div>
+<div class="flex justify-between items-center">
+<h3 class="font-headline-md text-headline-md italic">Golden Hour Solitude</h3>
+<span class="font-label-sm text-label-sm tracking-widest opacity-60">ENGAGEMENTS — 2024</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-section-gap bg-primary-container text-white px-margin-mobile">
+<div class="max-w-3xl mx-auto text-center">
+<span class="font-label-sm text-label-sm tracking-[0.5em] opacity-60 uppercase mb-8 block">THE JOURNEY STARTS HERE</span>
+<h2 class="font-display-md text-display-md mb-12 italic">Let's tell your story next.</h2>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<a href="book.html" class="bg-white text-primary px-12 py-4 font-label-sm text-label-sm tracking-[0.2em] uppercase hover:bg-opacity-90 transition-all" style="display:inline-block;text-decoration:none;text-align:center;">INQUIRE NOW</a>
+<a href="investment.html" class="border border-white/30 text-white px-12 py-4 font-label-sm text-label-sm tracking-[0.2em] uppercase hover:bg-white hover:text-primary transition-all" style="display:inline-block;text-decoration:none;text-align:center;">VIEW PRICING</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-primary-container dark:bg-tertiary-container flex flex-col items-center justify-center text-center px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary-fixed mb-12">OROZCO VISUALS</h2>
+<div class="flex flex-wrap justify-center gap-10 mb-16">
+<a class="font-label-sm text-label-sm tracking-[0.2em] text-primary-fixed border-b border-primary-fixed uppercase" href="book.html">LET'S TELL YOUR STORY</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] text-on-primary-container hover:text-tertiary-fixed-dim transition-colors uppercase" href="#">INSTAGRAM</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] text-on-primary-container hover:text-tertiary-fixed-dim transition-colors uppercase" href="#">FACEBOOK</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] text-on-primary-container hover:text-tertiary-fixed-dim transition-colors uppercase" href="book.html">CONTACT</a>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container/60 tracking-widest max-w-lg">
+            © 2024 OROZCO VISUALS. CINEMATIC STORIES FOR THE DISCERNING EYE.
+        </p>
+</footer>
+<!-- Mobile Navigation Bar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center py-4 px-2 bg-primary dark:bg-primary-container shadow-2xl z-50">
+<div class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm tracking-widest">HOME</span>
+</div>
+<div class="flex flex-col items-center justify-center text-tertiary-fixed font-bold translate-y-[-2px]">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="font-label-sm text-label-sm tracking-widest">WORK</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-label-sm text-label-sm tracking-widest">PRICING</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-label-sm text-label-sm tracking-widest">BOOK</span>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OROZCO VISUALS | Cinematic Stories for the Discerning Eye</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2f3131",
+                        "primary": "#000000",
+                        "primary-container": "#1c1b1b",
+                        "primary-fixed": "#e5e2e1",
+                        "primary-fixed-dim": "#c9c6c5",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "background": "#f9f9f9",
+                        "tertiary-fixed": "#f0e0d3",
+                        "secondary-container": "#e1dfdb",
+                        "surface-container-high": "#e8e8e8",
+                        "on-background": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#4f453c",
+                        "tertiary": "#000000",
+                        "secondary": "#5e5e5b",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container": "#eeeeee",
+                        "surface": "#f9f9f9",
+                        "outline-variant": "#c4c7c7",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#474744",
+                        "tertiary-fixed-dim": "#d3c4b8",
+                        "tertiary-container": "#221a13",
+                        "on-primary-fixed-variant": "#474646",
+                        "on-secondary-fixed": "#1b1c19",
+                        "outline": "#747878",
+                        "surface-tint": "#5f5e5e",
+                        "secondary-fixed": "#e4e2dd",
+                        "on-surface-variant": "#444748",
+                        "on-tertiary-fixed": "#221a13",
+                        "on-secondary-container": "#63635f",
+                        "surface-container-low": "#f3f3f4",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#c8c6c2",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-dim": "#dadada",
+                        "on-tertiary-container": "#8e8277",
+                        "on-surface": "#1a1c1c",
+                        "on-primary-container": "#858383",
+                        "inverse-primary": "#c9c6c5",
+                        "on-primary-fixed": "#1c1b1b",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "margin-tablet": "40px",
+                        "section-gap": "160px",
+                        "container-max": "1440px",
+                        "unit": "8px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-md": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                        "display-lg": ["84px", {"lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                        "display-md": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopAppBar -->
+<header class="bg-surface/90 backdrop-blur-md text-primary fixed top-0 w-full z-50 border-b border-outline-variant/30 h-20">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-full w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity">menu</span>
+</div>
+<div class="font-headline-md text-headline-md tracking-tighter text-primary">OROZCO VISUALS</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold font-label-sm text-label-sm tracking-[0.2em] uppercase transition-transform active:scale-95" href="#">HOME</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm tracking-[0.2em] uppercase hover:opacity-70 transition-opacity" href="#">WORK</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm tracking-[0.2em] uppercase hover:opacity-70 transition-opacity" href="#">PRICING</a>
+<a class="bg-primary text-on-primary px-6 py-2 font-label-sm text-label-sm tracking-[0.2em] uppercase transition-transform active:scale-95" href="#">BOOK NOW</a>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined">calendar_today</span>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full overflow-hidden">
+<div class="absolute inset-0 bg-primary/20 z-10"></div>
+<img alt="Cinematic Hero" class="absolute inset-0 w-full h-full object-cover" data-alt="A grand, cinematic wide-angle shot of a couple standing at the edge of a dramatic cliff at sunset. The lighting is warm and golden, casting long shadows and highlighting the intricate textures of the bride's flowing white gown. The composition is expansive, emphasizing the scale of the landscape and the intimacy of the moment. The overall aesthetic is editorial and high-end, with a sophisticated and quiet mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC11IKozieVMrIFn93cVc_jnmsT7aNFrS9zQeR2Vq1W3W_YmJX73j_maKkhCscks_F5L9Aztw3xHyZTmjqoci-BmI2FNLQv0jibXyCL1Kr3fGXCrT1wvNNu6UGcqe3LANC_pNPHUrYeCJLjUJLjPt6grKMSQGC8YZUjipL2aUciwFMdZXQOFHq9JwvMtp38HCh62qUqZNJKGzfw0l1QEwKaY8xHpPbTFVQC6qdUzcgoONZF_4xHb4vp0fc2r4pxQRIqe6dMqpwOXJY"/>
+<div class="relative z-20 h-full flex flex-col justify-center items-center text-center px-margin-mobile">
+<span class="font-label-sm text-label-sm text-white tracking-[0.4em] mb-6 uppercase">Documenting Timeless Legacies</span>
+<h1 class="font-display-lg text-display-lg text-white max-w-4xl italic">The Art of the Untold Story</h1>
+<div class="mt-12">
+<button class="bg-white text-primary px-10 py-4 font-label-sm text-label-sm tracking-[0.2em] uppercase hover:bg-opacity-90 transition-all active:scale-95">VIEW PORTFOLIO</button>
+</div>
+</div>
+</section>
+<!-- Storytelling Section -->
+<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 items-center gap-16">
+<div class="md:col-span-5">
+<div class="relative aspect-[3/4] overflow-hidden">
+<img alt="Detail Shot" class="w-full h-full object-cover grayscale" data-alt="A minimalist black and white close-up shot of two hands gently intertwining, focusing on the subtle textures of the skin and the elegance of a classic wedding band. The lighting is soft and directional, creating a gentle gradient of light and shadow that emphasizes the emotional connection. The background is completely out of focus, keeping the viewer's attention entirely on the intimacy of the gesture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4IDj6voMd5aL-WJ1_HsT1ME653xuv_S4vKH5AHembu7jp2VYoIZbW55yPiPkWN62YeCHXlKhNaVPPG6JkX1ocuJvU_baWiwZap3BMFbrxO3-xLFnZnAFimebzVB5yjloP_pUc1mwDDI2jU2FxQbwV_X1_NInK8OHM2WFrLGmMAXCUDr30-zj6czECAc9VCZLjP3Cn3pr_hanq_k4IhOfWlVsbl_muRI7aVbyveB0qrklqhpDgOGy5-c0i59MNeRbvA4ifd0sDRNI"/>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 space-y-8">
+<span class="font-label-sm text-label-sm text-primary tracking-[0.2em] uppercase">Philosophy</span>
+<h2 class="font-headline-lg text-headline-lg text-primary leading-tight">Beyond Photography. <br/>A Legacy of Vision.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        We believe in the quiet power of the unseen. Our approach is rooted in cinematic editorialism—capturing the moments that feel like a film still, frozen in a time of effortless grace. Every wedding is a narrative that deserves to be told with the precision of a master artist and the soul of a storyteller.
+                    </p>
+<div class="pt-4">
+<a class="font-label-sm text-label-sm border-b border-primary pb-1 tracking-[0.2em] hover:opacity-50 transition-opacity" href="#">READ OUR STORY</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Works Gallery -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<span class="font-label-sm text-label-sm text-primary tracking-[0.2em] uppercase block mb-4">Portfolio</span>
+<h2 class="font-headline-lg text-headline-lg">Selected Works</h2>
+</div>
+<div class="hidden md:block">
+<span class="font-label-sm text-label-sm tracking-[0.2em]">01 — 12</span>
+</div>
+</div>
+<div class="masonry-grid">
+<!-- Large vertical -->
+<div class="col-span-12 md:col-span-8 overflow-hidden group relative">
+<img class="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An editorial fashion-style wedding portrait of a couple walking through a grand, minimalist architectural hallway. The lighting is high-contrast, with sharp geometric shadows playing across the clean white surfaces. The couple is dressed in modern, sophisticated attire, and the mood is one of quiet, high-fashion elegance. The composition uses leading lines to create a sense of deep perspective." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS6ZW1EEeA7nVDsR2OMUOqD6futG8P-HuzpAo6JPvdYjuq3cmhz5_q5mS2Kbz4fQOm2SGJ4v5rSzDJZ7Yvy1R9cVkoKHs_jFhGGAnpLS2laVZzU9HI0VNb230EX1w5KXcYp-Urzft8r5x-s_v-aXNa-7IXZ-wYu7Y4cBWDehG64tvFG7r0OBZkBluBV8j-lJV5b010P6ZJiwq3do4j1eU7rrlk64CNn3YrdvOMhDm-angE2FSr6Qe04pcgMBXiCU8GoMEqA-LlXO0"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<span class="text-white font-label-sm tracking-widest">MALIBU, CALIFORNIA</span>
+</div>
+</div>
+<!-- Small square -->
+<div class="col-span-12 md:col-span-4 space-y-6">
+<div class="overflow-hidden group relative h-[288px]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A beautiful, soft-focus close-up of a bride's floral bouquet featuring white peonies and delicate greenery. The lighting is bright and airy, consistent with a clean, light-mode luxury aesthetic. The focus is tack-sharp on the petals, while the background melts into a creamy, ethereal blur. The colors are muted and sophisticated, focusing on whites, creams, and soft sage greens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD008qEC0Xxg0SthE1xLzQtO_yOmPL2u00t5wZVJnDSCiR1BBoJJhcusnlSyaG-6l2Bc8p-0zI91YSgOBAVrvaKkR7FrxX-ux16ZUwb9SFDi8fh7EyhMyQQ4RSMStbLSXLRNOPqtAAmR2_llpHXlrzNFZv-BU0RUglalyj4JZEK8PzHBItv0uHpLX6Bq9gBQoxPVMHcg5FjU7fY2ibkjdFBHb0KVTLWMBUP5b26wKmZbFmduyNnnPjgKE6jEIG04aYUJooqYezxqug"/>
+</div>
+<div class="overflow-hidden group relative h-[288px]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic capture of a reception dinner set in an old-world European courtyard at night. Dozens of glowing candles on long, linen-draped tables create a warm, intimate atmosphere. The lighting is low-key and moody, with the candle flames providing a soft, flickering glow. The aesthetic is timeless and luxurious, capturing the magic of an evening celebration under the stars." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTWO8zixonxIs1t8zUOIsImcR7NVfeOLfoIRw5u7m-LUM3eR4a0qC9lLja9mtHzgpfq3PXXVgtQDZQImubGO5jlTL6BeyEwFkzz-YtY63WF9cn96UmWGR9LNFSaYQpTrHoDJTTW7-nXrnsQBeFm8VQSp3GMV5kN1FOTzcKWwxGjZxT6dMXTUyNxCIsDr2NSD2YgemSqV1eMr1zKPoKI8y_umczzw5SQd9kABVkpXKzWAjBfL-U57g1GyjLHbY_1d3-TuVxY0DfHac"/>
+</div>
+</div>
+<!-- Horizontal spans -->
+<div class="col-span-12 md:col-span-4 h-[400px] overflow-hidden group relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A candid, emotional moment between a father and daughter before the ceremony. They are standing in a softly lit, wood-paneled library. The mood is quiet and poignant, captured with a shallow depth of field. The lighting is natural, coming from a large window off-camera, creating a soft and flattering glow on their expressions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKHdgkUtMG0xWu_-cKqHmoIYAWc0iaZcOUT_OnaZTs3uP4krX0PtUunsciY60gvqWVVZearpNZLIhiG8geyYqeg7nvYi-o-M6tVq4dyGbrBmQaW6UOuVooE8wIYqtoY2BMyKW-X3G6caog_FHUcKfror7H2ON0GsjBSaJtd_7zJPuD8YDegvd4kAiiCrvbFAj4MsAU2N5OBgWA1ZYoANrLLC2QxOJMPob90yQpRrMsgQx0VUy1klNL73xIVI-se2P5p4Dmv655txs"/>
+</div>
+<div class="col-span-12 md:col-span-8 h-[400px] overflow-hidden group relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A wide-angle cinematic shot of a couple standing on the balcony of a historic Parisian apartment. The city's rooftops are visible in the background under a soft, overcast sky. The lighting is cool and even, creating an elegant, editorial feel. The couple is silhouetted slightly against the pale sky, adding a sense of mystery and romance to the composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGSOkOp-hA_KMetoEnNlOFC1xWaoscX_VWomVL5cF2tsl-sHKLaenP7qKYJk5D1W9mQW3Q6XP9Vsywr_7nvreLlSIOtMEZr-K6HUg_qKIaFOyEUV2f3vhoWNfEpqSBWuCfO1Z4_Pt89BoMZxjw2EXGrKYXy2qpDU7dFwYQJAffDQm5_ueC6Yofo7TmKzQucvlMTPcGyzR_I3ZQGrXro9u57X9k_9hF7zEp1gL8Fig2dIeDg-2-TWkZfuRzhkNxp6XhG4Ww6aefbtA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Kind Words Section -->
+<section class="py-section-gap px-margin-mobile">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl mb-8">format_quote</span>
+<p class="font-headline-lg text-headline-lg italic mb-12 leading-tight">
+                    "Orozco doesn't just take photos; he captures the soul of the day. Looking at our gallery felt like watching a classic film where we were the stars. Truly incomparable artistry."
+                </p>
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm tracking-[0.2em] uppercase">Elena &amp; Julian</span>
+<span class="text-on-surface-variant font-label-sm text-[10px] mt-1 uppercase">Villa d'Este, Lake Como</span>
+</div>
+</div>
+</section>
+<!-- Inquire Now Section -->
+<section class="bg-primary-container text-primary-fixed py-section-gap overflow-hidden relative">
+<div class="absolute inset-0 opacity-20">
+<img class="w-full h-full object-cover" data-alt="A blurred, atmospheric shot of a black-tie ballroom event. The lights are soft and warm, creating beautiful bokeh patterns. The texture is grainy and cinematic, suggesting a high-end, exclusive celebration. The overall color palette is deep charcoal and warm gold, perfectly complementing a sophisticated brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm1kxrUnDrItelzvbA8VgkSgWYEprpSLpSvfv01RDNUtWyW9vJfaijaByAVfEodm0QGHmFsTJMFzpOjfHp7h5c7L50Te3UYTrcHV7z36cqgnX8vLYcyQ4c5T5p8glvHzkit-3G9NdqkZQ8cAmKe1heKfrsipDsIGFcN8G8BAYq87_Cu0Vf6ZJX02H0Bll7-uYbascCZqh4QyZAhVgKShSYBw5E27We26G0Er97nlBh4gcs3u6t5xVa2Ospfipfs_ftYa1G0r_01Qc"/>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-display-md text-display-md mb-8">Reserve Your Date</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim max-w-2xl mx-auto mb-16">
+                    Our calendar is intentionally limited to twenty commissions per year to ensure every story receives our undivided creative focus.
+                </p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<a class="bg-primary-fixed text-primary px-12 py-5 font-label-sm text-label-sm tracking-[0.2em] uppercase hover:bg-white transition-colors" href="#">INQUIRE NOW</a>
+<a class="border border-primary-fixed-dim text-primary-fixed px-12 py-5 font-label-sm text-label-sm tracking-[0.2em] uppercase hover:bg-primary-fixed hover:text-primary transition-colors" href="#">REQUEST BROCHURE</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container text-primary-fixed py-section-gap w-full">
+<div class="flex flex-col items-center justify-center text-center px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
+<div class="font-headline-lg text-headline-lg text-primary-fixed mb-12">OROZCO VISUALS</div>
+<div class="flex flex-wrap justify-center gap-8 mb-16">
+<a class="text-on-primary-container font-label-sm text-label-sm tracking-[0.2em] hover:text-tertiary-fixed-dim transition-colors uppercase" href="#">LET'S TELL YOUR STORY</a>
+<a class="text-on-primary-container font-label-sm text-label-sm tracking-[0.2em] hover:text-tertiary-fixed-dim transition-colors uppercase" href="#">INSTAGRAM</a>
+<a class="text-on-primary-container font-label-sm text-label-sm tracking-[0.2em] hover:text-tertiary-fixed-dim transition-colors uppercase" href="#">FACEBOOK</a>
+<a class="text-on-primary-container font-label-sm text-label-sm tracking-[0.2em] hover:text-tertiary-fixed-dim transition-colors uppercase" href="#">CONTACT</a>
+</div>
+<p class="text-on-primary-container font-label-sm text-label-sm tracking-[0.2em] opacity-60">
+                © 2024 OROZCO VISUALS. CINEMATIC STORIES FOR THE DISCERNING EYE.
+            </p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center py-4 px-2 bg-primary z-50 shadow-2xl">
+<a class="flex flex-col items-center justify-center text-tertiary-fixed font-bold transition-transform translate-y-[-2px]" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-[10px] mt-1 tracking-widest">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60 hover:text-tertiary-fixed-dim transition-colors" href="#">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="font-label-sm text-[10px] mt-1 tracking-widest">WORK</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60 hover:text-tertiary-fixed-dim transition-colors" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-label-sm text-[10px] mt-1 tracking-widest">PRICING</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60 hover:text-tertiary-fixed-dim transition-colors" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-label-sm text-[10px] mt-1 tracking-widest">BOOK</span>
+</a>
+</nav>
+</body></html>

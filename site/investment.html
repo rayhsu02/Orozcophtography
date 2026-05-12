@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Investment | OROZCO VISUALS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2f3131",
+                        "primary": "#000000",
+                        "primary-container": "#1c1b1b",
+                        "primary-fixed": "#e5e2e1",
+                        "primary-fixed-dim": "#c9c6c5",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "background": "#f9f9f9",
+                        "tertiary-fixed": "#f0e0d3",
+                        "secondary-container": "#e1dfdb",
+                        "surface-container-high": "#e8e8e8",
+                        "on-background": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#4f453c",
+                        "tertiary": "#000000",
+                        "secondary": "#5e5e5b",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container": "#eeeeee",
+                        "surface": "#f9f9f9",
+                        "outline-variant": "#c4c7c7",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#474744",
+                        "tertiary-fixed-dim": "#d3c4b8",
+                        "tertiary-container": "#221a13",
+                        "on-primary-fixed-variant": "#474646",
+                        "on-secondary-fixed": "#1b1c19",
+                        "outline": "#747878",
+                        "surface-tint": "#5f5e5e",
+                        "secondary-fixed": "#e4e2dd",
+                        "on-surface-variant": "#444748",
+                        "on-tertiary-fixed": "#221a13",
+                        "on-secondary-container": "#63635f",
+                        "surface-container-low": "#f3f3f4",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#c8c6c2",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-dim": "#dadada",
+                        "on-tertiary-container": "#8e8277",
+                        "on-surface": "#1a1c1c",
+                        "on-primary-container": "#858383",
+                        "inverse-primary": "#c9c6c5",
+                        "on-primary-fixed": "#1c1b1b",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "margin-tablet": "40px",
+                        "section-gap": "160px",
+                        "container-max": "1440px",
+                        "unit": "8px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-md": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                        "display-lg": ["84px", {"lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                        "display-md": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-white">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 h-20 flex justify-between items-center px-margin-mobile md:px-margin-desktop">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+<span class="font-headline-md text-headline-md tracking-tighter text-primary">OROZCO VISUALS</span>
+</div>
+<div class="hidden md:flex gap-8">
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant hover:opacity-70 transition-opacity duration-300" href="index.html">HOME</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant hover:opacity-70 transition-opacity duration-300" href="portfolio.html">WORK</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-primary font-bold transition-opacity duration-300" href="investment.html">PRICING</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant hover:opacity-70 transition-opacity duration-300" href="graduation.html">GRADUATION</a>
+</div>
+<a href="book.html" class="font-label-sm text-label-sm tracking-[0.2em] uppercase bg-primary text-on-primary px-6 py-3 active:scale-95 transition-transform" style="display:inline-block;text-decoration:none;text-align:center;">BOOK NOW</a>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<header class="px-margin-mobile md:px-margin-desktop mb-section-gap max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8">
+<div class="max-w-2xl">
+<p class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant mb-4">Investment</p>
+<h1 class="font-display-lg text-display-lg leading-none">PRESERVING YOUR <br/>LEGACY.</h1>
+</div>
+<div class="max-w-sm">
+<p class="font-body-md text-body-md text-on-surface-variant">We believe photography is more than just documentation—it’s an heirloom. Our collections are curated for those who value cinematic storytelling and editorial precision.</p>
+</div>
+</div>
+</header>
+<!-- Tiered Collections Grid -->
+<section class="px-margin-mobile md:px-margin-desktop mb-section-gap max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Weddings Collection -->
+<div class="group relative flex flex-col border border-outline-variant/30 bg-surface h-full">
+<div class="aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="A cinematic black and white portrait of a couple in formal wedding attire standing in a grand, sun-drenched marble corridor. The lighting is high-contrast with deep shadows and brilliant highlights, creating an editorial, luxury magazine aesthetic. The mood is timeless and romantic, emphasizing the sharp tailoring of the tuxedo and the delicate textures of the lace bridal gown." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0zKZZcIug-0EW2E-viKSPvLoiTY_79mgca84CxmYSZKYjQBtwH0BoCrv1c9FPDf5l1FzZQCFuQxZqJMKnEhM4_LfaetatyLjJiEAQiN9_HPWDBCGVyoWh3OrtzrulIZho9gA6Xo0HAgECaqt-q8EDkZKq6A61_8wHNQjIn6adzYmDVO3ObJgYTdLlD4Xi5J3MWOVm7xS1LbrAMX1R2EvLj7_qWYLVirvvx277blontKejxriXkITkz5PTud9Qq56RnDKV79DkUM4"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h2 class="font-headline-md text-headline-md mb-2">WEDDINGS</h2>
+<p class="font-label-sm text-label-sm tracking-widest text-on-surface-variant mb-6 uppercase">Starting at $4,200</p>
+<ul class="space-y-4 mb-8 flex-grow">
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="check">check</span> 8-10 Hours Coverage
+                            </li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="check">check</span> Lead Photographer &amp; Assistant
+                            </li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="check">check</span> High-Res Private Gallery
+                            </li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="check">check</span> Fine Art Print Box
+                            </li>
+</ul>
+<a href="book.html" class="w-full border border-primary py-4 font-label-sm text-label-sm tracking-widest uppercase hover:bg-primary hover:text-white transition-colors duration-300" style="display:inline-block;text-decoration:none;text-align:center;">INQUIRE FOR DATES</a>
+</div>
+</div>
+<!-- Quinceañeras Collection -->
+<div class="group relative flex flex-col border border-outline-variant/30 bg-surface h-full">
+<div class="aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="An ethereal, high-fashion portrait of a young woman in an elaborate, voluminous ball gown posing within a minimalist concrete architectural space. Soft afternoon sunlight filters through geometric openings, creating a mix of soft shadows and glowing edges. The aesthetic is clean and modern, blending luxury tradition with contemporary cinematic lighting and a neutral, warm color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtmnYfLw7S1Nco6JslMLoGKuYpbFW1AMcZGfQwG2Kj-EMVGnd880N2cBCg8cvQqU7gqiQWu68MNfy8G7aloz5tVM3k6poyWh3RtLUPXSBS2OLR7OXg8AfI4P1bYCQAn6ShEKha5QWyaHVlpSySSXjiae7ZCqXt36M8ej-Vy7qitVfKKc9fZViZGlSFNjxOxEZzOsm7jIfcOy8amtPzCLyYVmt4am6sHupeQnI3bgcC3YaPjkeNsWj4rkRpRt2cZg7iU34S9EC1Yy0"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h2 class="font-headline-md text-headline-md mb-2">QUINCEÑERAS</h2>
+<p class="font-label-sm text-label-sm tracking-widest text-on-surface-variant mb-6 uppercase">Starting at $2,800</p>
+<ul class="space-y-4 mb-8 flex-grow">
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="check">check</span> 6-8 Hours Coverage
+                            </li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="check">check</span> Artistic Portrait Session
+                            </li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="check">check</span> Cinematic Highlight Reel
+                            </li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="check">check</span> Custom Photo Album
+                            </li>
+</ul>
+<a href="book.html" class="w-full border border-primary py-4 font-label-sm text-label-sm tracking-widest uppercase hover:bg-primary hover:text-white transition-colors duration-300" style="display:inline-block;text-decoration:none;text-align:center;">INQUIRE FOR DATES</a>
+</div>
+</div>
+<!-- Engagements Collection -->
+<div class="group relative flex flex-col border border-outline-variant/30 bg-surface h-full">
+<div class="aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="A sophisticated lifestyle portrait of a couple walking through a minimalist European city street at dusk. The lighting is moody and cinematic, with streetlights creating warm flares against a cool blue twilight sky. The composition is wide and editorial, focusing on the movement and intimacy of the couple within the clean, architectural environment of the city." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfA5I0py5mV4NWAP2ClGNI1ttEQqxgOC1SqOchj08P4E5PIJTuiFpU9evL644UyBgQPdPsnlQJwk3C-nrU-_dTdSZ7O3SnJSVo27ZLn74DE8e-2miGClg8S7L1ipi2aOCEJtpT-ZoZ3N9PEuLwB8nDrZI3zafTYlZ6Qt1-_PsBE3-gAQbhPP-HTyNM8X95sjGPi5Jf4PIu3dOiWwlKzMnK_4ZjFxDzms6Mh7yAwprz7pbHivVvij7ty28c3288HnbToeE_oejJk60"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h2 class="font-headline-md text-headline-md mb-2">ENGAGEMENTS</h2>
+<p class="font-label-sm text-label-sm tracking-widest text-on-surface-variant mb-6 uppercase">Starting at $950</p>
+<ul class="space-y-4 mb-8 flex-grow">
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="check">check</span> 2-Hour Location Shoot
+                            </li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="check">check</span> Two Outfit Changes
+                            </li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="check">check</span> Digital Delivery within 2 Weeks
+                            </li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="check">check</span> High-End Retouching
+                            </li>
+</ul>
+<a href="book.html" class="w-full border border-primary py-4 font-label-sm text-label-sm tracking-widest uppercase hover:bg-primary hover:text-white transition-colors duration-300" style="display:inline-block;text-decoration:none;text-align:center;">BOOK SESSION</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Add-ons Section: Bento Style -->
+<section class="bg-surface-container py-section-gap">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<p class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant mb-4">Enhance Your Experience</p>
+<h2 class="font-headline-lg text-headline-lg">THE FINISHING TOUCHES</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-gutter">
+<!-- Film Photography -->
+<div class="md:col-span-2 p-8 bg-surface border border-outline-variant/30 flex flex-col justify-between group hover:bg-primary transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4 group-hover:text-white" data-icon="camera_roll">camera_roll</span>
+<h3 class="font-headline-md text-headline-md mb-2 group-hover:text-white">FILM PHOTOGRAPHY</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-primary-fixed">The timeless texture of 35mm and medium format film added to any session.</p>
+</div>
+<p class="font-label-sm text-label-sm tracking-widest uppercase mt-8 group-hover:text-white">Add $600</p>
+</div>
+<!-- Fine Art Albums -->
+<div class="p-8 bg-surface border border-outline-variant/30 flex flex-col justify-between group hover:bg-primary transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4 group-hover:text-white" data-icon="menu_book">menu_book</span>
+<h3 class="font-label-sm text-label-sm font-bold tracking-widest uppercase mb-2 group-hover:text-white">HEIRLOOM ALBUMS</h3>
+</div>
+<p class="font-label-sm text-label-sm tracking-widest uppercase group-hover:text-white">Starting at $850</p>
+</div>
+<!-- Drone Coverage -->
+<div class="p-8 bg-surface border border-outline-variant/30 flex flex-col justify-between group hover:bg-primary transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4 group-hover:text-white" data-icon="flight">flight</span>
+<h3 class="font-label-sm text-label-sm font-bold tracking-widest uppercase mb-2 group-hover:text-white">DRONE CINEMA</h3>
+</div>
+<p class="font-label-sm text-label-sm tracking-widest uppercase group-hover:text-white">Add $400</p>
+</div>
+<!-- Expedited Delivery -->
+<div class="p-8 bg-surface border border-outline-variant/30 flex flex-col justify-between group hover:bg-primary transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4 group-hover:text-white" data-icon="bolt">bolt</span>
+<h3 class="font-label-sm text-label-sm font-bold tracking-widest uppercase mb-2 group-hover:text-white">RUSH DELIVERY</h3>
+</div>
+<p class="font-label-sm text-label-sm tracking-widest uppercase group-hover:text-white">Add $350</p>
+</div>
+<!-- Additional Hours -->
+<div class="md:col-span-2 p-8 bg-surface border border-outline-variant/30 flex flex-col justify-between group hover:bg-primary transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4 group-hover:text-white" data-icon="schedule">schedule</span>
+<h3 class="font-headline-md text-headline-md mb-2 group-hover:text-white">EXTENDED COVERAGE</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-primary-fixed">Ensure no moment is missed with additional hours of event coverage.</p>
+</div>
+<p class="font-label-sm text-label-sm tracking-widest uppercase mt-8 group-hover:text-white">$300 / HR</p>
+</div>
+<!-- Travel -->
+<div class="p-8 bg-surface border border-outline-variant/30 flex flex-col justify-between group hover:bg-primary transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4 group-hover:text-white" data-icon="public">public</span>
+<h3 class="font-label-sm text-label-sm font-bold tracking-widest uppercase mb-2 group-hover:text-white">TRAVEL</h3>
+</div>
+<p class="font-label-sm text-label-sm tracking-widest uppercase group-hover:text-white">QUOTED PER MILE</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-gap px-margin-mobile text-center">
+<h2 class="font-display-md text-display-md mb-8">READY TO BEGIN?</h2>
+<p class="font-body-lg text-body-lg max-w-xl mx-auto mb-12 text-on-surface-variant">We take on a limited number of commissions each year to ensure every story receives the attention it deserves. Secure your date today.</p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<a href="book.html" class="bg-primary text-on-primary px-12 py-5 font-label-sm text-label-sm tracking-widest uppercase active:scale-95 transition-transform" style="display:inline-block;text-decoration:none;text-align:center;">CHECK AVAILABILITY</a>
+<a href="portfolio.html" class="border border-outline px-12 py-5 font-label-sm text-label-sm tracking-widest uppercase hover:bg-surface-container transition-colors" style="display:inline-block;text-decoration:none;text-align:center;">VIEW PORTFOLIO</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container text-primary-fixed w-full py-section-gap">
+<div class="flex flex-col items-center justify-center text-center px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary-fixed mb-8 tracking-tighter">OROZCO VISUALS</h2>
+<div class="flex flex-wrap justify-center gap-8 mb-12">
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-primary-container hover:text-tertiary-fixed-dim transition-colors" href="book.html">LET'S TELL YOUR STORY</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-primary-container hover:text-tertiary-fixed-dim transition-colors" href="#">INSTAGRAM</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-primary-container hover:text-tertiary-fixed-dim transition-colors" href="#">FACEBOOK</a>
+<a class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-primary-container hover:text-tertiary-fixed-dim transition-colors" href="book.html">CONTACT</a>
+</div>
+<p class="font-label-sm text-label-sm tracking-[0.2em] opacity-50">© 2024 OROZCO VISUALS. CINEMATIC STORIES FOR THE DISCERNING EYE.</p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile only) -->
+<div class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center py-4 px-2 bg-primary z-50 shadow-2xl">
+<div class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-sm text-[10px] tracking-widest">HOME</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60">
+<span class="material-symbols-outlined" data-icon="photo_library">photo_library</span>
+<span class="font-label-sm text-[10px] tracking-widest">WORK</span>
+</div>
+<div class="flex flex-col items-center justify-center text-tertiary-fixed font-bold translate-y-[-2px]">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="font-label-sm text-[10px] tracking-widest">PRICING</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-primary-fixed-variant opacity-60">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+<span class="font-label-sm text-[10px] tracking-widest">BOOK</span>
+</div>
+</div>
+</body></html>
