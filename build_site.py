@@ -1,8 +1,7 @@
 import re, os
 
 base = '/Users/rayhsu/Projects/websites/stitch_orozco_visuals_digital_experience'
-site_dir = os.path.join(base, 'site')
-os.makedirs(site_dir, exist_ok=True)
+site_dir = base
 
 files = {
     'home_orozco_visuals/code.html': 'index.html',
